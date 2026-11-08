@@ -1,2 +1,2 @@
-# clinical-palette.github.io
+# clinical-palette
 Website project
