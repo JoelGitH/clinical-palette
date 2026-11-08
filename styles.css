@@ -1,0 +1,38 @@
+/* Globale Stile fuer die ganze Seite */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Die Hauptüberschrift anpassen */
+h1 {
+    color: #2c3e50;
+    font-size: 2.5rem;
+}
+
+/* Einen Button modern designen */
+.btn-primary {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+/* Hover-Effekt für den Button */
+.btn-primary:hover {
+    background-color: #2980b9;
+}
+hr {
+    border: none;               /* Removes the default browser border */
+    height: 2px;                /* Sets the thickness of the line */
+    background-color: #3498db;  /* Changes the color (e.g., blue) */
+    margin: 20px 0;             /* Adds space above and below the line */
+}
+
