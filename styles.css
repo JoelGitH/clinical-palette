@@ -9,7 +9,8 @@ body {
 
 /* Die Hauptüberschrift anpassen */
 h1 {
-    color: #2c3e50;
+    background-color: aquamarine;
+    color: rgb(98, 27, 222);
     font-size: 2.5rem;
 }
 
@@ -36,3 +37,123 @@ hr {
     margin: 20px 0;             /* Adds space above and below the line */
 }
 
+/*Beginning of hamburger menu*/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #25d448e8;
+  color: #fff;
+  padding: 1rem 2rem;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 1.5rem;
+}
+
+.nav-links a {
+  color: #fff;
+  text-decoration: dashed;
+}
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 5px;
+}
+
+.hamburger span {
+  width: 25px;
+  height: 3px;
+  background-color: #fff;
+  transition: 0.3s;
+}
+
+@media (max-width: 768px) {
+  .nav-links {
+    position: absolute;
+    right: 0;
+    top: 60px;
+    background-color: #333;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-in-out;
+  }
+
+  .nav-links.active {
+    max-height: 300px;
+  }
+
+  .nav-links li {
+    padding: 1rem 0;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+}
+
+/*footer*/
+
+.footer-nav {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  gap: 1.25rem;
+}
+.footer-nav a {
+color: #b0b0b0;
+text-decoration: none;
+transition: color 0.2s ease;
+margin-bottom: 0.5rem;
+}
+.footer-nav a:hover {
+  color: #09f2c7;
+}
+.footer-bottom {
+  text-align: center;
+  margin-top: 2.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid #888;
+  font-size: 0.85rem;
+  color: #888;
+}
+/*main*/
+.main1{
+    background-color: #f0f5f4;
+    color: #333;
+    margin: 1rem;
+}
+.fotos{
+    display: flex;             /* Aktiviert das Flexbox-Layout */
+    gap: 1rem;                 /* Abstand zwischen den Bildern */
+    align-items: center;       /* Vertikale Ausrichtung */
+    flex-wrap: wrap; 
+    justify-content: center;   /* Zentriert die Reihe auf dem Bildschirm */
+}
+.fotos img{
+    flex: 1 1 200px;
+    width: 400px;              
+    height: 4000px;
+    height: auto;              /* Seitenverhältnis beibehalten */
+    object-fit: cover;
+    border-radius: 8px       /* Optional: Schöne abgerundete Ecken */
+    
+}

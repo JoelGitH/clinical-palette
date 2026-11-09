@@ -12,22 +12,53 @@
         <h1>Clinical Palette</h1>
     </header>
 
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="galery/galery.html">Galery</a>  
-        <a href="about/about.html">About Us</a> 
-        <a href="contact/contact.html">Contact</a> 
+    <nav class="navbar">
+        <div class="logo">Logo</div>
+        <ul class="nav-links" id="navLinks">
+            <a href="index.html">Home</a>
+            <a href="galery/galery.html">Galery</a>  
+            <a href="about/about.html">About Us</a> 
+            <a href="contact/contact.html">Contact</a>
+        </ul>
+        <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
     </nav>
 
     <main>
         <p>Here is the main text of the new website.</p>
         <button class="btn-primary">Click me</button>
+        <div class="main1">
+            <div class="fotos">
+                <img src="foto1.jpg" alt="Here should come a picture"
+                    width="400" height="400">
+                <img src="foto2.jpg" alt="Here should come a picture"
+                    width="400" height="400">
+                <img src="foto3.jpg" alt="Here should come a picture"
+                    width="400" height="400">
+            </div>
+        </div>
     </main>
 
-    <footer>
+    <footer class="footer">
         <hr>
-        <p>&copy; 2026 Clinical Palette. All Rights Reserved.</p>
+        <nav class="footernav">
+            <ul class="footer-nav">
+                <a href="privacy.html">Privacy Policy</a>
+                <a href="about/about.html">About Us</a>
+                <a href="services.html">Services</a> 
+                <a href="contact.html">Contact</a>
+                <a href="#impressum">Impressum</a>
+             </ul>
+        </nav>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Clinical Palette. All Rights Reserved.</p>
+        </div>
     </footer>
+
+    <script src="script.js"></script>
 
 </body>
 </html>
